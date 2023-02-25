@@ -52,14 +52,16 @@ body{
     margin-top:32px;
 }
 
-.person-name{
+.bill-container{
+    width: 100%;
+    max-width: 380px;
     display:flex;
     flex-direction: column;
     gap:6px;
 }
 
-.person-name span{
-    font-family:'Space Mono', monospace;
+.bill-container h3{
+    font-family: 'Space Mono', monospace;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -68,28 +70,30 @@ body{
     color:var(--dark-grey);
 }
 
-.bill-div{
-    width:311px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding:6px 17.48px 6px 19.26px;
+.bill-container div{
+    position:relative;
+}
+
+.bill-container input{
+    background-color: #F3F9FA;
+    border: none;
     border-radius: 5px;
-    background-color: var(--light-grey);
-}
-
-.bill-div svg{
-    margin-top:10.87px;
-}
-
-.bill-div a{
-    font-family: 'Space Mono', monospace;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0px;
+    height: 48px;
+    width: 100%;
+    padding-right: 17px;
+    box-sizing: border-box;
     text-align: right;
-    color:var(--dark-blue);
+    color: var(--dark-blue);
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+#dollar{
+    position: absolute;
+    top: 17px;
+    left: 19px;
 }
 
 .select-tip{
@@ -149,6 +153,49 @@ body{
 
 .custom a{
     color:var(--grey);
+}
+
+.people-quantity{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    gap:6px;
+}
+
+.people-quantity h3{
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--dark-grey);
+}
+
+.people-quantity div{
+    position: relative;
+}
+
+.people-quantity input{
+    background-color: #F3F9FA;
+    border: none;
+    border-radius: 5px;
+    height: 48px;
+    width: 100%;
+    padding-right: 17px;
+    box-sizing: border-box;
+    text-align: right;
+    color: #00474B;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+#person{
+    position: absolute;
+    top: 17px;
+    left: 19px;
 }
 
 .bottom-div{
@@ -273,29 +320,13 @@ body{
         margin-bottom:48px;
     }
 
-    .person-name{
-        display:flex;
-        flex-direction: column;
-        gap:6px;
-    }
-
-    .bill-div{
-        width:379px;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding:6px 17px 6px 19.26px;
-        border-radius: 5px;
-        background-color: var(--light-grey);
-    }
-
     .tip-percentage{
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap:14px 16px;
     }
-
+    
     .percent{
         width:115px;
         height:48px;
