@@ -13,6 +13,8 @@
     --brightness-blue:#9FE8DF;
     --grey:#547878;
     --gloom-grey:#7F9D9F;
+    --terra-cotta:#E17457;
+    --azure:#F3F9FA;
 }
 
 body{
@@ -75,7 +77,7 @@ body{
 }
 
 .bill-container input{
-    background-color: #F3F9FA;
+    background-color: var(--azure);
     border: none;
     border-radius: 5px;
     height: 48px;
@@ -120,14 +122,51 @@ body{
     gap:16px;
 }
 
+.tip-percentage button:hover{
+    background-color: var(--light-blue);
+    cursor: pointer;
+}
+
+.tip-percentage button:focus{
+    background: var(--blue);
+    cursor: pointer;
+    color: var(--dark-blue);
+}
+
 .percent{
     width:146.63px;
+    border: none;
     height:48px;
     background-color: var(--dark-blue);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: center;
+    color:var(--white);
+}
+
+.custom{
+    width:146.63px;
+    height:48px;
+    background-color: var(--dark-blue);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family:'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: center;
+    border: none;
+ 
 }
 
 .percent a{
@@ -163,6 +202,9 @@ body{
 }
 
 .people-quantity h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: 'Space Mono', monospace;
     font-size: 16px;
     font-weight: 700;
@@ -178,7 +220,6 @@ body{
 
 .people-quantity input{
     background-color: #F3F9FA;
-    border: none;
     border-radius: 5px;
     height: 48px;
     width: 100%;
@@ -190,6 +231,35 @@ body{
     line-height: 35px;
     font-weight: 700;
     font-family: 'Space Mono', monospace;
+}
+
+#tip-person{
+    font-family: 'Space Mono', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: right;
+    color:var(--blue);
+}
+
+#total-person{
+    font-family:'Space Mono', monospace; 
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: right;
+    color:var(--blue);
+}
+
+.error-border{
+    border:2px solid var(--terra-cotta);
+}
+
+.error{
+    display:none;
+    color:var(--terra-cotta);
 }
 
 #person{
@@ -337,6 +407,36 @@ body{
         align-items: center;
     }
 
+    .custom{
+        width:115px;
+        height:48px;
+        background-color: var(--dark-blue);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #tip-person{
+        font-family: 'Space Mono', monospace;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: -0.6666666865348816px;
+        text-align: right;
+        color:var(--blue);
+    }
+    
+    #total-person{
+        font-family:'Space Mono', monospace; 
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: -0.6666666865348816px;
+        text-align: right;
+        color:var(--blue);
+    }
+
     .blue{
         background-color: var(--blue);
     }
@@ -405,6 +505,15 @@ body{
         border-radius: 5px;
         padding:9px 0;
         border:none;
+        background-color: var(--pitch-black-blue);
+        cursor: pointer;
+    }
+
+    #reset-div button:hover{
+        background-color: var(--brightness-blue);
+    }
+
+    #reset-div button:focus{
         background-color: var(--blue);
     }
 
