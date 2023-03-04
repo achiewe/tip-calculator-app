@@ -40,10 +40,10 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- Javascript
+- Vanilla js
 
 ### What I learned
-this project is very helpful to practice  with responsive design and soon i will update here javascript manipulations.
+this project is very helpful to practice  with responsive design and also i use vanilla js for this project. it was not easy to do all this manipulations but finally i recieved result. i learn many things from there, for example, how we can produce function and use it to manipulate on html elements. also learn and use addEventListener which is convenient and comfortable to use.
 
 
 ## Author
